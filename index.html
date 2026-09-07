@@ -27,4 +27,5 @@
 <textarea class="full" placeholder="最後一題：除了固定安排以外，只能特別幫你完成一件事情，你希望是什麼？"></textarea><button class="btn" type="submit">送出需求問卷　→</button></form><p class="notice">送出的是行前需求調查，不代表立即報名或付款。未串接資料庫前，表單會以示範模式運作。</p></div></section>
 <footer><div>© 林博｜大阪生活型客製自由行</div><div>10/19–10/23　ONLY ONE DEPARTURE</div></footer>
 <script>document.getElementById('signupForm').addEventListener('submit',e=>{e.preventDefault();e.target.innerHTML='<h3>已收到你的需求問卷！</h3><p>這不是直接報名或付款。我們會整理大家的需求，再與你聯絡確認。</p>'},{capture:false});</script>
+<script>document.getElementById('signupForm').noValidate=true;</script>
 <script>document.getElementById('signupForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('count').textContent='1';e.target.innerHTML='<h3>已收到你的報名需求！</h3><p>我們會盡快與你聯絡，確認這趟大阪生活。</p>'});</script></body></html>
